@@ -1,17 +1,20 @@
 import React from 'react';
-
-// var data = require('xml!../data/collection.xml');
-// console.dir(data);
-
-// var testData = data.items.item[0].name;
-// console.log(testData);
+import Game from './Game';
 
 const Single = React.createClass({
 	render() {
+		// index of the game
+		const i = this.props.games.findIndex((game) => game.$.objectId === this.props.params.objectId);
+		console.log(i);
+		// not sure why this is logging -1 instead of the correct number
+
+		// get the game data
+		const game = this.props.games[i];
+		// console.log(game);
+
 		return (
 			<div className="single-game">
-				I'm the single.
-				<h1 className="game-title">Game Title</h1>
+				I'm a single game.
 			</div>
 		)
 	}
