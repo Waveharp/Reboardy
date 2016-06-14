@@ -1,6 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router';
 
+function replacer(key, value) {
+  if (typeof value === "string") {
+    return value;
+  }
+  return undefined;
+}
+
 const Game = React.createClass({
 	render() {
 		// const { game, i } = this.props;
@@ -9,7 +16,9 @@ const Game = React.createClass({
 			<figure>
 				<div>
 					<Link to={`/view/${this.props.game.$.objectid}`}>
-						{JSON.stringify(this.props.game.name)}
+						<pre>
+							{JSON.stringify(this.props.game.name[0]._)}
+						</pre>
 					</Link>
 				</div>			
 			</figure>
