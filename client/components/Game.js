@@ -1,13 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router';
 
-function replacer(key, value) {
-  if (typeof value === "string") {
-    return value;
-  }
-  return undefined;
-}
-
 const Game = React.createClass({
 	render() {
 		// const { game, i } = this.props;
