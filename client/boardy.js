@@ -14,14 +14,6 @@ import { Router, Route, IndexRoute, browserHistory } from 'react-router';
 import { Provider } from 'react-redux';
 import store, { history } from './store';
 
-// get collection data
-// var data = require('xml!./data/collection.xml');
-// console.dir(data);
-
-// var test = data.items.item[1].name;
-// console.log(test);
-// above code works! pulls in data from downloaded xml file
-
 const router = (
 	<Provider store={store}>		
 		<Router history={history}>
