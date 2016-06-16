@@ -8,6 +8,9 @@ const Main = React.createClass({
 				<h1>
 					<Link to="/">Boardy</Link>
 				</h1>
+				<h2>
+					<Link to="/addgame">Add a game</Link>
+				</h2>
 				{React.cloneElement(this.props.children, { ...this.props, key: undefined, ref: undefined })}
 			</div>
 		)

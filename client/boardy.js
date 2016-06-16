@@ -2,6 +2,7 @@ import React from 'react';
 import App from './components/App';
 import Single from './components/Single';
 import GameGrid from './components/GameGrid';
+import AddGame from './components/AddGame';
 
 import { render } from 'react-dom';
 
@@ -27,6 +28,7 @@ const router = (
 			<Route path="/" component={App}>
 				<IndexRoute component={GameGrid}></IndexRoute>
 				<Route path="/view/:objectId" component={Single}></Route>
+				<Route path="/addgame" component={AddGame}></Route>
 			</Route>
 		</Router>
 	</Provider>
