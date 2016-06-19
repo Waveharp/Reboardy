@@ -7,8 +7,8 @@ const Game = React.createClass({
 		return (
 			<figure>
 				<div>
-					<Link to={`/view/${this.props.game.$.objectid}`}>
-						{JSON.stringify(this.props.game.name[0]._)}
+					<Link to={`/view/${this.props.game.objectid}`}>
+						{this.props.game.name}
 					</Link>
 				</div>			
 			</figure>

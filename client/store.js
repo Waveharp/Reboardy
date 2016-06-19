@@ -6,8 +6,7 @@ import { browserHistory } from 'react-router';
 import rootReducer from './reducers/index';
 
 // import collection data
-const games = require('xml!./data/collection.xml').items.item;
-
+import games from './data/testData';
 
 // create an object for the default data
 const defaultState = {
