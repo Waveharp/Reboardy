@@ -1,6 +1,6 @@
 function games(state = [], action) {
-	// console.log("The post will change")
-	// console.log(state, action);
+	console.log("The game will change")
+	console.log(state, action);
 	return state;
 }
 
