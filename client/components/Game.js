@@ -3,14 +3,21 @@ import { Link } from 'react-router';
 
 const Game = React.createClass({
 	render() {
-		// const { game, i } = this.props;
+		const { game, i } = this.props;
 		return (
 			<figure>
 				<div>
-					<Link to={`/view/${this.props.game.objectid}`}>
-						{this.props.game.name}
+					<Link to={`/view/${game.objectid}`}>
+						{game.name}
 					</Link>
-				</div>			
+				</div>
+
+				<figcaption>
+					<div className="like-button">
+						<button onClick={this.props.increment.bind(null, i)}>&hearts; {game.likes}</button>
+					</div>
+				</figcaption>
+
 			</figure>
 		)
 	}
