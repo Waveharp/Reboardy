@@ -7,10 +7,12 @@ import rootReducer from './reducers/index';
 
 // import collection data
 import games from './data/testData';
+import comments from './data/comments';
 
 // create an object for the default data
 const defaultState = {
-	games
+	games,
+	comments
 };
 
 const store = createStore(rootReducer, defaultState);

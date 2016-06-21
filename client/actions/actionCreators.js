@@ -15,4 +15,21 @@ export function increment(index) {
 	}
 }
 
+export function addComment(objectId, author, comment) {
+	return {
+		type: 'ADD_COMMENT',
+		objectId,
+		author,
+		comment
+	}
+}
+
+export function removeComment(objectId, i) {
+	return {
+		type: 'REMOVE_COMMENT',
+		i,
+		objectId
+	}
+}
+
 // also add import existing collection action
