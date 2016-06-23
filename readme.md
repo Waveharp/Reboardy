@@ -14,14 +14,8 @@ Run `npm build` to create a distro folder and a bundle.js file.
 
 ## To Do
 
-### for Reduxstagram rebuild
-
-- [] implement likes to have a simple action
-
-### Boardy Proper
-
-- [] set up PostCSS
-- [] pass data from boardy.js to single component
+- [x] set up PostCSS
+- [x] pass data from boardy.js to single component
 - [] use api to get game data
 - [] handle invalid characters in xml file (such as &)
 - [x] build the game component
@@ -30,7 +24,7 @@ Run `npm build` to create a distro folder and a bundle.js file.
 - [] implement play logger
 
 ## Future features
-- ability to comment on a game
+- [x] ability to comment on a game
 - ability to comment on specific plays of a game
 - winner's journal (winner of a play gets prompted for a short message about the game)
 
