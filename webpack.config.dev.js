@@ -1,5 +1,8 @@
 var path = require('path');
 var webpack = require('webpack');
+var lost = require('lost');
+var rucksack = require('rucksack-css');
+var precss = require('precss');
 
 module.exports = {
   devtool: 'source-map',
@@ -28,8 +31,15 @@ module.exports = {
     { 
       test: /\.css$/, 
       include: path.join(__dirname, 'client'),
-      loader: 'style-loader!css-loader'
-    }
+      loaders: ['style', 'css', 'postcss']
+    },
     ]
+  },
+  postcss: function() {
+    return [
+      lost,
+      rucksack({autoprefixer: true}),
+      precss
+    ];
   }
 };
