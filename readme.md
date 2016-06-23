@@ -16,12 +16,13 @@ Run `npm build` to create a distro folder and a bundle.js file.
 
 - [x] set up PostCSS
 - [x] pass data from boardy.js to single component
-- [] use api to get game data
-- [] handle invalid characters in xml file (such as &)
+- [ ] use api to get game data
+- [ ] handle invalid characters in xml file (such as &)
 - [x] build the game component
 - [x] build gamegrid component
-- [] build and implement game filtering
-- [] implement play logger
+- [ ] build and implement game filtering
+- [ ] implement play logger
+- [ ] configure github pages deployment
 
 ## Future features
 - [x] ability to comment on a game
