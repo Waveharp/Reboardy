@@ -1,3 +1,10 @@
+@import './normalize.css';
+
+/*
+	General Styles
+*/
+
+
 body {
 	background-color: #EBEBEC;
 }
@@ -8,4 +15,62 @@ a {
 
 a:visited {
 	color: black;
+}
+
+/*
+	Games
+*/
+
+.game-grid {
+	display: flex;
+	flex-wrap: wrap;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.grid-figure {
+	flex-basis: calc(33.333% - 4rem);
+	flex-grow: 1;
+	flex-shrink: 0;
+	margin: 0 2rem 2rem 2rem;
+	padding: 2rem;
+	border: 1px solid lightgrey;
+	background: white;
+	box-shadow: 0 0 0 5px rgba(0,0,0,0.03);
+	position: relative;
+}
+
+.single-game {
+
+}
+
+/*
+	Comments
+*/
+
+.comment {
+	border-bottom: 1px solid lightgrey;
+	padding: 0.5rem 0;
+	p {
+		font-size: 1.2rem;
+		margin: 0;
+	}
+	strong {
+		color: dodgerblue;
+		margin-right: 5px;
+	}
+}
+
+.comment-form {
+
+}
+
+/*
+	Buttons
+*/
+
+.likes {
+	color: dodgerblue;
+	margin: .5rem;
+	margin-left: 0;
 }

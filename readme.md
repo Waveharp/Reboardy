@@ -23,6 +23,7 @@ Run `npm build` to create a distro folder and a bundle.js file.
 - [ ] build and implement game filtering
 - [ ] implement play logger
 - [ ] configure github pages deployment
+- [ ] hook up to firebase
 
 ## Future features
 - [x] ability to comment on a game

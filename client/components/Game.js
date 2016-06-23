@@ -5,7 +5,7 @@ const Game = React.createClass({
 	render() {
 		const { game, i, comments } = this.props;
 		return (
-			<figure>
+			<figure className="grid-figure">
 				<div>
 					<Link to={`/view/${game.objectid}`}>
 						{game.name}
