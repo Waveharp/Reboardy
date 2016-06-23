@@ -16,6 +16,7 @@ export function increment(index) {
 }
 
 export function addComment(objectId, author, comment) {
+	console.log("dispatching add comment");
 	return {
 		type: 'ADD_COMMENT',
 		objectId,

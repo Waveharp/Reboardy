@@ -12,12 +12,12 @@ const Single = React.createClass({
 		const game = this.props.games[i];
 		console.log(game);
 
-		// const gameComments = this.props.comments[objectId] || [];
+		const gameComments = this.props.comments[this.props.params.objectId] || [];
 
 		return (
 			<div className="single-game">
 				<Game i={i} game={game} {...this.props} />
-				<Comments />
+				<Comments gameComments={gameComments} {...this.props} />
 			</div>
 		)
 	}
