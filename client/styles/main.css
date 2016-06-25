@@ -1,12 +1,29 @@
 @import './normalize.css';
 
+
+
+/*
+	Typography
+*/
+
+html {
+	font-size: 12px;
+	font-family: sans-serif;
+}
+
+p {
+	font-size: 1.6rem;
+	line-height: 1.5;
+}
+
+
+
 /*
 	General Styles
 */
 
-
 body {
-	background-color: #EBEBEC;
+	background-color: #fafafa;
 }
 
 a {
@@ -16,6 +33,8 @@ a {
 a:visited {
 	color: black;
 }
+
+
 
 /*
 	Games
@@ -41,8 +60,42 @@ a:visited {
 }
 
 .single-game {
-
+	@extend .grid-figure;
+	max-width: 900px;
+	margin: 0 auto;
+	display: flex;
+	background: white;
+	.grid-figure {
+		box-shadow: none;
+		margin: 0 2rem 0 0;
+		border: 0;
+		padding: 0;
+		flex: 1 0 60%;
+		max-width: 60%;
+	}
+	.comments {
+		flex: 1 0 40%;
+		max-width: 40%;
+	}
+	.grid-photo {
+		width: 100%;
+		margin: 0;
+	}
 }
+
+.grid-image {
+	width: calc(100% + 4rem);
+	margin-left: -2rem;
+	margin-top: -2rem;
+	max-width: none;
+	height: 350px;
+}
+
+.grid-game-wrap {
+	position: relative;
+}
+
+
 
 /*
 	Comments
@@ -64,6 +117,12 @@ a:visited {
 .comment-form {
 
 }
+
+.comment-text {
+	margin-right: .5rem;
+}
+
+
 
 /*
 	Buttons

@@ -6,14 +6,15 @@ const Game = React.createClass({
 		const { game, i, comments } = this.props;
 		return (
 			<figure className="grid-figure">
-				<div>
+				<div className="grid-game-wrap">
 					<Link to={`/view/${game.objectid}`}>
-						{game.name}
+						<img className="grid-image" src={game.image} />
+						<h3>{game.name}</h3>
 					</Link>
 				</div>
 
 				<figcaption>
-					<div className="like-button">
+					<div className="control-buttons">
 						<button className="likes" onClick={this.props.increment.bind(null, i)}>&hearts; {game.likes}</button>
 						<Link to={`view/${game.objectid}`}>
 							<span className="comment-count">
