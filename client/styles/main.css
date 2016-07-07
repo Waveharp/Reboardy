@@ -23,8 +23,7 @@ p {
 */
 
 body {
-	/*background-color: #fafafa;*/
-	background-color: $blue;
+	background-color: #fafafa;
 }
 
 a {
@@ -110,7 +109,7 @@ a:visited {
 		margin: 0;
 	}
 	strong {
-		color: dodgerblue;
+		color: $blue;
 		margin-right: 5px;
 	}
 }
@@ -130,7 +129,7 @@ a:visited {
 */
 
 .likes {
-	color: dodgerblue;
+	color: $blue;
 	margin: .5rem;
 	margin-left: 0;
 }
