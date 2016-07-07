@@ -24,6 +24,7 @@ Run `npm build` to create a distro folder and a bundle.js file.
 - [ ] implement play logger
 - [ ] configure github pages deployment
 - [ ] hook up to firebase
+- [ ] use reactui components
 
 ## Future features
 - [x] ability to comment on a game
