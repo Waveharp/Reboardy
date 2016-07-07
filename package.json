@@ -57,8 +57,10 @@
     "expect": "^1.18.0",
     "expect-jsx": "^2.5.1",
     "mocha": "^2.4.5",
+    "node-sass": "^3.8.0",
     "postcss-loader": "^0.9.1",
     "react-addons-test-utils": "^15.0.2",
-    "rucksack-css": "^0.8.6"
+    "rucksack-css": "^0.8.6",
+    "sass-loader": "^4.0.0"
   }
 }

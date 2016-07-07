@@ -33,6 +33,11 @@ module.exports = {
       include: path.join(__dirname, 'client'),
       loaders: ['style', 'css', 'postcss']
     },
+    // Sass
+    {
+      test: /\.scss$/,
+      loaders: ["style", "css", "sass"]
+    }
     ]
   },
   postcss: function() {
