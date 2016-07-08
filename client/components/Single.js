@@ -2,8 +2,6 @@ import React from 'react';
 import Game from './Game';
 import Comments from './Comments';
 
-import {Button} from 'react-toolbox/lib/button';
-
 const Single = React.createClass({
 	render() {
 		// index of the game
@@ -20,7 +18,6 @@ const Single = React.createClass({
 			<div className="single-game">
 				<Game i={i} game={game} {...this.props} />
 				<Comments gameComments={gameComments} {...this.props} />
-				<Button label="Hello World!" />
 			</div>
 		)
 	}
