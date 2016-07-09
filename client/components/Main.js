@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router';
+import { Button } from 'rebass';
 
 const Main = React.createClass({
 	render() {
@@ -9,7 +10,7 @@ const Main = React.createClass({
 					<Link to="/">Boardy</Link>
 				</h1>
 				<h2>
-					<Link to="/addgame"><button>Add a game</button></Link>
+					<Link to="/addgame"><Button>Add a game</Button></Link>
 				</h2>
 				{React.cloneElement(this.props.children, { ...this.props, key: undefined, ref: undefined })}
 			</div>
