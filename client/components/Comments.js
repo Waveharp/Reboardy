@@ -1,5 +1,7 @@
 import React from 'react';
 
+import { Close } from 'rebass';
+
 const Comments = React.createClass({
 
 	renderComment(comment, i) {
@@ -8,7 +10,7 @@ const Comments = React.createClass({
 				<p>
 					<strong>{comment.user}</strong>
 					<span className="comment-text">{comment.text}</span>
-					<button className="remove-comment" onClick={this.props.removeComment.bind(null, this.props.params.objectId, i)}>&times;</button>
+					<Close onClick={this.props.removeComment.bind(null, this.props.params.objectId, i)} />
 				</p>
 			</div>
 		)
