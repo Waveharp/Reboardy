@@ -40,6 +40,12 @@ a:visited {
 	Games
 */
 
+/* style rebass components with the component name and use the important flag to override it's base style
+*/
+.CardImage {
+	height: 320px !important;
+}
+
 .game-grid {
 	display: flex;
 	flex-wrap: wrap;
