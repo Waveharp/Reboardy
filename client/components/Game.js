@@ -14,7 +14,10 @@ const Game = React.createClass({
 					width={256}
 				>
 					<Link to={`/view/${game.objectid}`}>
-						<CardImage className="rebass-card-image" src={game.image} />
+						<CardImage 
+							className="rebass-card-image" 
+							src={game.image}
+							style={{ height: 320 }} />
 						<Heading
 							level={2}
 							size={3}
