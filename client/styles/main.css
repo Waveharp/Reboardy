@@ -42,8 +42,9 @@ a:visited {
 
 /* style rebass components with the component name and use the important flag to override it's base style
 */
+
 .CardImage {
-	/*height: 320px !important;*/
+	/*height: 30px !important;*/
 }
 
 .game-grid {

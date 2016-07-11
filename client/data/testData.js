@@ -8,7 +8,8 @@ const games = [
 		"own": "yes",
 		"numplays": 20,
 		"likes": 10,
-		"type": "boardgame"
+		"type": "boardgame",
+		"rating": 3
 	},
 	{
 		"name": "BANG!",
@@ -19,7 +20,8 @@ const games = [
 		"own": "yes",
 		"numplays": 15,
 		"likes": 7,
-		"type": "boardgame"
+		"type": "boardgame",
+		"rating": 4
 	},
 	{
 		"name": "Betrayal at the House on the Hill",
@@ -30,7 +32,8 @@ const games = [
 		"own": "no",
 		"numplays": 3,
 		"likes": 4,
-		"type": "boardgame"
+		"type": "boardgame",
+		"rating": 5
 	},
 	{
 		"name": "Carcassonne",
@@ -41,7 +44,8 @@ const games = [
 		"own": "yes",
 		"numplays": 30,
 		"likes": 11,
-		"type": "boardgame"
+		"type": "boardgame",
+		"rating": 2.5
 	}
 ];
 

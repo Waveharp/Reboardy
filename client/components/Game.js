@@ -1,7 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router';
 
-import { Card, CardImage, Heading, Text } from 'rebass';
+import { Card, CardImage, Heading,
+				 Text, Rating 
+			 } from 'rebass';
 
 const Game = React.createClass({
 	render() {
@@ -17,7 +19,7 @@ const Game = React.createClass({
 						<CardImage 
 							className="rebass-card-image" 
 							src={game.image}
-							style={{ height: 320 }} />
+							style={{ height: "25rem" }} />
 						<Heading
 							level={2}
 							size={3}
@@ -25,6 +27,7 @@ const Game = React.createClass({
 							{game.name}
 						</Heading>
 					</Link>	
+
 					<figcaption>
 						<div className="control-buttons">
 							<button className="likes" onClick={this.props.increment.bind(null, i)}>&hearts; {game.likes}</button>
@@ -34,7 +37,11 @@ const Game = React.createClass({
 								</span>
 							</Link>
 						</div>
+						<Rating 
+							value={game.rating}
+						/>
 					</figcaption>
+
 				</Card>
 
 
