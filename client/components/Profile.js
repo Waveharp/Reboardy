@@ -7,10 +7,13 @@ const Profile = React.createClass({
 		return (
 			<div className="profile">
 				<Container>
-					<Avatar />
+					<Avatar 
+						src={'http://lorempixel.com/64/64/cats'}
+					/>
 					<Heading level={2}>
 						Waveharp's Profile
 					</Heading>
+					<Divider />
 					<Stat
 						label="Wins"
 						value="23"
