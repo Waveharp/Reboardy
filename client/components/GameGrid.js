@@ -1,6 +1,5 @@
 import React from 'react';
 import Game from './Game';
-import Filter from './Filter';
 
 const GameGrid = React.createClass({
 	render() {
