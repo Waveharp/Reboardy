@@ -18,6 +18,12 @@ const AddGame = React.createClass({
 
 	},
 
+	displayData() {
+		myFirebaseRef.child("Hello").on("value", function(snapshot) {
+				alert(snapshot.val());
+		});
+	},
+
 	render() {
 		return (
 			<div>
@@ -28,7 +34,7 @@ const AddGame = React.createClass({
 				</form>
 				<p>or</p>
 				<h4>Import your collection from BGG</h4>
-				<button>Import</button>
+				<button onClick={this.displayData}>Import</button>
 			</div>
 		)
 	}
