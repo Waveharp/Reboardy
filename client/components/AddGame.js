@@ -1,4 +1,6 @@
 import React from 'react';
+var Firebase = require("firebase");
+var myFirebaseRef = new Firebase("https://boardy.firebaseio.com/");
 
 const AddGame = React.createClass({
 	
@@ -7,6 +9,9 @@ const AddGame = React.createClass({
 		console.log("submitting");
 		const name = this.refs.name.value;
 		console.log(name);
+		myFirebaseRef.set({
+			title: "test data"
+		});
 
 		// need to create this function
 		// this.props.addGame(name);
