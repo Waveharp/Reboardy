@@ -33,4 +33,12 @@ export function removeComment(objectId, i) {
 	}
 }
 
+export function addGame(objectId, i) {
+	return { 
+		type: "ADD_GAME",
+		i,
+		objectId
+	}
+}
+
 // also add import existing collection action
