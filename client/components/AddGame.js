@@ -23,6 +23,7 @@ const AddGame = React.createClass({
 				</form>
 				<p>or</p>
 				<h4>Import your collection from BGG</h4>
+				<input type="text" ref="username" placeholder="Username"/>
 				<button>Import</button>
 			</div>
 		)
