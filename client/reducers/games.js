@@ -1,7 +1,6 @@
-function games(state = [], action) {
-	// console.log("The game will change");
-	// console.log(state, action);
+import _ from 'lodash';
 
+function games(state = {}, action) {
 	switch(action.type) {
 		case 'INCREMENT_LIKES':
 			console.log("Incrementing likes");
@@ -11,6 +10,8 @@ function games(state = [], action) {
 				{...state[i], likes: state[i].likes + 1},
 				...state.slice(i + 1),
 			]
+		case 'FETCH_GAMES':
+			return action.payload;
 		default:
 			return state;
 	}

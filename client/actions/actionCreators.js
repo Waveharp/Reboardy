@@ -1,4 +1,4 @@
-// need to plan actions for Boardy
+import firebaseDb from '../firebase/firebase';
 
 // reduxstagram actions:
 // increment, add comment, remove comment
@@ -33,12 +33,13 @@ export function removeComment(objectId, i) {
 	}
 }
 
-export function addGame(objectId, i) {
-	return { 
-		type: "ADD_GAME",
-		i,
-		objectId
-	}
-}
+// Firebase stuff
 
-// also add import existing collection action
+export function fetchGames() {
+	return dispatch => {
+		console.log('fetchGames');
+		return firebase.database().ref('/games/').once('value').then(function(snapshot) {
+			var games = snapshot.val().games;
+		});
+	};
+}
