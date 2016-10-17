@@ -1,4 +1,7 @@
+import firebase from 'firebase';
+import firebaseApp from '../firebase/firebase';
 import firebaseDb from '../firebase/firebase';
+
 
 // reduxstagram actions:
 // increment, add comment, remove comment
@@ -38,8 +41,8 @@ export function removeComment(objectId, i) {
 export function fetchGames() {
 	return dispatch => {
 		console.log('fetchGames');
-		return firebase.database().ref('/games/').once('value').then(function(snapshot) {
-			var games = snapshot.val().games;
+		firebase.database().ref('/games/').once('value').then(function(snapshot){
+			return(snapshot.val().games);
 		});
 	};
-}
+};

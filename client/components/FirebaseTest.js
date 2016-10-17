@@ -16,8 +16,9 @@ const FirebaseTest = React.createClass({
 	},
 
 	firebaseFunc2() {
-		console.log('test');
 		var testGames = this.props.fetchGames();
+		console.log(testGames);
+		// why does that return an unresolved Promise
 	},
 
 	render() {
