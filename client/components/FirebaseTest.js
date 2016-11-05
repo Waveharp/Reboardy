@@ -1,11 +1,9 @@
 import React from 'react';
 import _ from 'lodash';
 
-import 'firebase';
-import firebaseDb from '../firebase/firebase';
+import {firebase, helpers} from 'redux-react-firebase';
 
 const FirebaseTest = React.createClass({
-
 
 	firebaseFunc() {
 		console.log('yo');

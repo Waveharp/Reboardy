@@ -1,8 +1,3 @@
-import firebase from 'firebase';
-import firebaseApp from '../firebase/firebase';
-import firebaseDb from '../firebase/firebase';
-
-
 // reduxstagram actions:
 // increment, add comment, remove comment
 
