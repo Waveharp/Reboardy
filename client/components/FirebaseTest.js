@@ -18,7 +18,17 @@ const FirebaseTest = React.createClass({
 	firebaseFunc2() {
 		var testGames = this.props.fetchGames();
 		console.log(testGames);
-		// why does that return an unresolved Promise
+		// returns undefined
+	},
+
+	// this function works as named
+	firebaseFunc3() {
+		console.log('writing some static data');
+		firebase.database().ref('games/' + 'func3').set({
+			username: "Josh",
+			game: "Deception",
+			plays: "0"
+		});
 	},
 
 	render() {
@@ -26,7 +36,7 @@ const FirebaseTest = React.createClass({
 			<div>
 				<h1>List of games from my Firebase DB:</h1>
 				<p>is in the console.</p>
-				<button onClick={this.firebaseFunc2}>firebaseFunc</button>
+				<button onClick={this.props.writeStaticData}>firebaseFunc</button>
 			</div>
 		)
 	}

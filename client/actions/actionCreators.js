@@ -2,10 +2,6 @@ import firebase from 'firebase';
 import firebaseApp from '../firebase/firebase';
 import firebaseDb from '../firebase/firebase';
 
-
-// reduxstagram actions:
-// increment, add comment, remove comment
-
 // add comment functionality to games? might be neat
 // might even go ahead and do 'likes', would be simple to implement even if it didn't get much use
 
@@ -46,3 +42,16 @@ export function fetchGames() {
 		});
 	};
 };
+
+// Write static data to firebase
+
+export function writeStaticData() {
+	return dispatch => {
+		console.log('writing static data from actionCreators');
+		firebase.database().ref('games/' + 'static').set({
+			username: "Josh",
+			game: "Deception",
+			plays: "0"
+		});
+	}
+}
